@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar';
+import { Route, Routes } from 'react-router-dom';
+import One from './pages/One';
+import Two from './pages/Two';
+import Home from './pages/home';
+import Effect from './pages/Effect';
+import RufHooks from './pages/RufHooks';
+import LayoutEffect from './pages/Layout';
+import ImperativeHandle from './pages/ImperativeHandle';
+import Contaxt from './pages/Contaxt';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <div className='container'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/One' element={<One />} />
+          <Route path='/Two' element={<Two />} />
+          <Route path='/Effect' element={<Effect />} />
+          <Route path='/RufHooks' element={<RufHooks />} />
+          <Route path='/LayoutEffect' element={<LayoutEffect />} />
+          <Route path='/ImperativeHandle' element={<ImperativeHandle />} />
+          <Route path='/Contaxt' element={<Contaxt />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 

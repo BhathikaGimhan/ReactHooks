@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+* {
+    /* background-color: rgb(34, 34, 34); */
+    /* color: azure; */
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: rgb(34, 34, 34);
+    color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+} */
+
+button {
+    /* margin: 0 auto; */
+    /* display: block; */
+    background-color: rgb(20, 20, 20);
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+    margin: 1rem;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-input {
+    height: 30px;
+    margin: 20px;
+    margin: 5px auto;
+    width: 300px;
+    border: solid 1px rgb(134, 134, 134);
+    border-radius: 5px;
+    background-color: rgb(68, 68, 68);
+    color: aliceblue;
+}
+
+.heading {
+    color: aliceblue;
+}
+
+.app-input::after {
+    border: none;
+}
+
+.result-image {
+    width: 400px;
+    height: 400px;
+}
+
+.nav {
+    background-color: #333;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    align-items: center;
+    /* width: 100%; */
+    display: flex;
+    padding-top: .25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: .25rem;
+}
+
+.site-title {
+    font-size: 2rem;
+}
+
+.nav li.active {
+    background-color: #555;
+}
+
+.nav li:hover {
+    background-color: #777;
+}
+
+.result-text {
+    text-align: left;
+    padding-left: 100px;
+    font-size: 28px;
+    margin: 100px;
+    margin-right: 200px;
+    padding-top: 100px;
+    color: rgb(15, 15, 15);
+}
+
+.bg {
+    background-color: rgb(34, 34, 34);
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+}
+
+.hide {
+    position: absolute;
+    top: 10px;
+}
+
+.btn {
+    z-index: 2;
+    position: absolute;
+}
+
+.result-show {
+    text-align: left;
+    max-width: 700px;
+    color: rgb(236, 236, 236);
+}
+
+.Number-component {
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+}
+
+.btN-one {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.inline {
+    /* display: inline-block; */
+    vertical-align: top;
+    /* margin-left: 10px; */
+    /* display: flex; */
+    position: relative;
+}
+
+.input {
+    height: 40px;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
 }
